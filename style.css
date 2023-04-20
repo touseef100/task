@@ -1,0 +1,123 @@
+body{
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+    
+}
+.container{
+    width: 1170px; border: 2px solid green;
+    margin: 0 auto; overflow-y: auto;
+    background: #07070769;
+}
+.logo{
+    float: left; margin: 30px;
+     
+}
+.header ul{
+    float: right;
+    margin: 35px 30px;
+}
+
+ .header li { 
+ display: inline;
+  padding: 5px 15px;
+  margin: 0 10px;
+ border: 2px solid green;
+}
+a{
+    text-decoration: none;
+}
+button{
+     padding: 15px ;
+    
+}
+.content{
+    clear: both; margin: 0 30px;
+
+}
+.heroimage {
+    float: right;  
+}
+.content .headbox{
+    float: left; 
+}
+
+.footer{
+    clear: both;
+}
+.footer h2,p{
+    text-align: center; clear: both;
+}
+
+.image-box{
+        margin: 0 auto;
+        width: 1000px;
+        display: table;
+    box-sizing: border-box;
+   clear: both;
+}
+
+.images{
+   width: 25%; padding: 10px; margin: 0 auto;
+   float: left;
+   box-sizing: border-box;
+}
+.image-box p,button{
+    width: 100%;
+}
+  
+@media screen and ( max-width :1170px){
+    .container{
+        width:800px;
+    }
+    .image-box{
+        width:100%;  float: none; 
+    }
+
+    .images img{
+        width:100%; float: none; 
+        /* margin: 0 auto; */
+    } 
+
+}
+@media screen and ( max-width :800px){
+    .container{
+        width:500px;
+    }
+    .heroimage, img{
+        width:100%; float: none; 
+        /* margin:0  auto; */
+    }
+   .images {
+        width:100%; float: none;
+   }
+  
+}
+@media screen and ( max-width :500px){
+    .container{
+        width: auto;
+    }
+    .menu,ul{
+        width:100%; float: none; margin-left: 50px;
+    }
+    .heroimage ,img{
+        width:100%; float: none; margin:20px auto 20px auto;
+    }
+    .headbox{
+        width:100%; float: none; 
+        /* margin: 0 auto; */
+    }
+    
+    .image-box{
+        width:50%; float: none;
+    }
+    .content ,headbox,h2{
+        width:50%; float: none; 
+        margin: 0 auto;
+    }
+
+    .logo {
+        width:50%; float: none; margin:20px auto;
+    }
+
+}
+                                     
